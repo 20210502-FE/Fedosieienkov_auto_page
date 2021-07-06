@@ -1,0 +1,918 @@
+@font-face {
+  font-family: 'Open Sans light';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/open-sans-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/open-sans-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans-v20-latin-regular.woff2") format("woff2"), url("../assets/fonts/open-sans-v20-latin-regular.woff") format("woff"), url("../assets/fonts/open-sans-v20-latin-regular.ttf") format("truetype"), url("../assets/fonts/open-sans-v20-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/open-sans-v20-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/open-sans-v20-latin-600.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans-v20-latin-600.woff2") format("woff2"), url("../assets/fonts/open-sans-v20-latin-600.woff") format("woff"), url("../assets/fonts/open-sans-v20-latin-600.ttf") format("truetype"), url("../assets/fonts/open-sans-v20-latin-600.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/open-sans-v20-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/open-sans-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans-v20-latin-700.woff2") format("woff2"), url("../assets/fonts/open-sans-v20-latin-700.woff") format("woff"), url("../assets/fonts/open-sans-v20-latin-700.ttf") format("truetype"), url("../assets/fonts/open-sans-v20-latin-700.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans Very Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/open-sans-v20-latin-800.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/open-sans-v20-latin-800.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans-v20-latin-800.woff2") format("woff2"), url("../assets/fonts/open-sans-v20-latin-800.woff") format("woff"), url("../assets/fonts/open-sans-v20-latin-800.ttf") format("truetype"), url("../assets/fonts/open-sans-v20-latin-800.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Rajdhani Regular';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/rajdhani-v10-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/rajdhani-v10-latin-500.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/rajdhani-v10-latin-500.woff2") format("woff2"), url("../assets/fonts/rajdhani-v10-latin-500.woff") format("woff"), url("../assets/fonts/rajdhani-v10-latin-500.ttf") format("truetype"), url("../assets/fonts/rajdhani-v10-latin-500.svg#Rajdhani") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Rajdhani Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/rajdhani-v10-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/rajdhani-v10-latin-700.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/rajdhani-v10-latin-700.woff2") format("woff2"), url("../assets/fonts/rajdhani-v10-latin-700.woff") format("woff"), url("../assets/fonts/rajdhani-v10-latin-700.ttf") format("truetype"), url("../assets/fonts/rajdhani-v10-latin-700.svg#Rajdhani") format("svg");
+  /* Legacy iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_align-center {
+  align-items: center;
+}
+
+.flex_align-start {
+  align-items: flex-start;
+}
+
+.flex_content-center {
+  justify-content: center;
+}
+
+.flex_space-between {
+  justify-content: space-between;
+}
+
+.flex_space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex_content-start {
+  justify-content: start;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.flex_column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex_basis-45 {
+  flex-basis: 45%;
+  max-width: 45%;
+}
+
+.header {
+  font-family: "Open Sans Regular", sans-serif;
+}
+
+.header__wrapper {
+  padding-top: 19px;
+  padding-bottom: 55px;
+}
+
+.header__nav-item {
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 15px;
+}
+
+.header__nav-item_bold {
+  font-family: "Open Sans Very Bold", sans-serif;
+}
+
+.header__center a {
+  color: #343434;
+}
+
+.header__right button {
+  font-family: "Open Sans Regular", sans-serif;
+}
+
+.button__login {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF2E63;
+  border: none;
+}
+
+.button__register {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF2E63;
+  border: none;
+}
+
+.button__login_active {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 8px 23px 10px;
+  background: #FF2E63;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.button__register_active {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 8px 23px 10px;
+  background: #FF2E63;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.popular__content {
+  margin-bottom: 101px;
+}
+
+.popular__text_title {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 36px;
+  line-height: 46px;
+  color: #343434;
+  margin-bottom: 46px;
+}
+
+.popular__text_link {
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF2E63;
+  width: 92px;
+  height: 22px;
+}
+
+.popular__text_link img {
+  width: 22px;
+  padding-top: 2px;
+}
+
+.popular__column_box {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.popular__column_box_text_top {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #252A34;
+  height: 62px;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+.popular__column_box_text_center {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FF2E63;
+  height: 51px;
+  margin-left: 20px;
+}
+
+.popular__column_box_text_center_black {
+  color: #252A34;
+}
+
+.popular__old_price {
+  font-family: "Rajdhani Regular", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration-line: line-through;
+  color: #999999;
+  margin-left: 7px;
+}
+
+.popular__column_box_text_bottom {
+  width: 270px;
+}
+
+.popular__column_box_text_bottom_text {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  height: 35px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.popular__column_box_text_bottom_link {
+  border: 2px solid #ffffff;
+  padding: 17px 12px;
+  background: #346CD9;
+  border-radius: 10px 0px;
+  border: none;
+}
+
+.popular__column_box_indent {
+  margin-top: 30px;
+  margin-bottom: 83px;
+}
+
+.popular__column_box_indent_85 {
+  margin-top: 85px;
+}
+
+.latest {
+  margin-bottom: 100px;
+}
+
+.latest__text_title {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 36px;
+  line-height: 46px;
+  color: #343434;
+  margin-bottom: 46px;
+}
+
+.latest__column_box {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.latest__column_box_text_top {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #252A34;
+  height: 29px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.latest__column_box_text_bottom {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  height: 39px;
+  margin-left: 20px;
+}
+
+.footer__wrapper {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.footer__content {
+  background-color: #346CD9;
+  height: 70px;
+}
+
+.footer__content_left {
+  margin-bottom: -9px;
+}
+
+.footer__content_right_item {
+  margin-left: 30px;
+  margin-top: 9px;
+}
+
+.footer__content_right_item {
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer__content_right_item a {
+  color: #ffffff;
+}
+
+.footer__content_right_item_bold {
+  font-family: "Open Sans Very Bold", sans-serif;
+}
+
+.login-register {
+  margin-bottom: 47px;
+}
+
+.login-register__wrapper {
+  margin-left: -30px;
+}
+
+.login-register__wrapper_left {
+  border-bottom: 2px solid #999999;
+}
+
+.login-register__wrapper_box {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 34px;
+  line-height: 57px;
+  color: #343434;
+  max-width: 50%;
+  padding-left: 60px;
+  margin-bottom: 11px;
+  position: relative;
+}
+
+.login-register__wrapper_box.active h2:before {
+  content: " ";
+  width: 176px;
+  position: absolute;
+  border-bottom: 5px solid #FF2E63;
+  border-radius: 5px;
+  top: 66.5px;
+}
+
+.login-register__wrapper_box.active_login h2:before {
+  content: " ";
+  width: 118px;
+  position: absolute;
+  border-bottom: 5px solid #FF2E63;
+  border-radius: 5px;
+  top: 66.5px;
+}
+
+.banner__content {
+  background-image: url(../../assets/images/banner-car.png);
+  background-size: 882px 494px;
+  height: 494px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.banner__left_text {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+  color: #343434;
+  max-width: 447px;
+  margin-top: 133px;
+  margin-bottom: 33px;
+}
+
+.banner__left_text_red {
+  color: #FF2E63;
+}
+
+.banner__left_button {
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  padding: 11px 28px;
+  background-color: #346CD9;
+  border-radius: 5px;
+}
+
+.danny {
+  margin-bottom: 101px;
+}
+
+.danny__text {
+  width: 50%;
+  background-color: #e7edfa;
+}
+
+.danny__text_title {
+  max-width: 400px;
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #343434;
+  margin-bottom: 30px;
+}
+
+.danny__text_text {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #343434;
+}
+
+.denny__img {
+  background-image: url(../../assets/images/nissan-370z.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+}
+
+.works__content__text_title {
+  margin-bottom: 60px;
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 36px;
+  line-height: 46px;
+  color: #343434;
+}
+
+.works__column_box {
+  max-width: 250px;
+  position: relative;
+}
+
+.works__column_box:not(:last-child):before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  height: 20px;
+  width: 32px;
+  background-image: url(../../assets/icons/vector-works-1.png);
+  background-size: cover;
+}
+
+.works__column_box_img {
+  margin-bottom: 30px;
+}
+
+.works__column_box_text {
+  text-align: center;
+  font-family: "Open Sans light", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #343434;
+}
+
+.works__column_box_text_title {
+  margin-bottom: 30px;
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #343434;
+}
+
+.works__column_box_text_text {
+  margin-bottom: 131px;
+}
+
+.shop {
+  position: relative;
+}
+
+.shop__popular__column_box_text_top {
+  margin-top: 20px;
+  height: 32px;
+}
+
+.shop__sidebar {
+  background: #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 270px;
+}
+
+.shop__input {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #999999;
+}
+
+.shop__input_number {
+  width: 95px;
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-top: 3px;
+}
+
+.shop__input span {
+  margin-top: 21px;
+}
+
+.shop__our-shop {
+  position: absolute;
+  left: 299px;
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 50px;
+  line-height: 64px;
+  color: #343434;
+}
+
+.shop__column_box_text_bottom_text {
+  margin-left: 20px;
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  margin-bottom: 22px;
+}
+
+.shop__column_box_text_bottom a {
+  font-family: "Open Sans Regular", sans-serif;
+  color: #ffffff;
+}
+
+.shop__column_box_text_bottom_link {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  background: #FF2E63;
+  border-radius: 5px;
+  padding: 9px 23px;
+  margin-left: 58px;
+  margin-bottom: 20px;
+}
+
+.sidebar__wrapper {
+  max-width: 230px;
+  margin: 0 auto;
+}
+
+.car-brand {
+  margin-top: 13px;
+}
+
+.car-brand_right {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #999999;
+}
+
+.car-brand_left_brand {
+  margin-left: 8px;
+  font-family: "Open Sans light", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #343434;
+}
+
+.car-brand_left_input {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+}
+
+.price {
+  margin-top: 27px;
+  margin-bottom: 10px;
+}
+
+.price__title {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #252A34;
+}
+
+.brands {
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.brands__title {
+  font-family: "Rajdhani Regular", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #1C1C1C;
+}
+
+.search {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #252A34;
+}
+
+.sidebar__input_bottom {
+  width: 230px;
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-top: 3px;
+  margin-bottom: 30px;
+}
+
+.bottom {
+  margin-bottom: 60px;
+}
+
+.bottom__box {
+  position: relative;
+}
+
+.bottom__tab {
+  position: absolute;
+  left: 614px;
+  margin: 0 -10px;
+}
+
+.bottom__tab_number {
+  padding: 0 10px;
+}
+
+.bottom__tab_next {
+  padding: 0 10px;
+}
+
+.bottom__tab_number {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.bottom__tab_number_1 {
+  text-decoration-line: underline;
+  color: #346CD9;
+}
+
+.bottom__tab_number_4 {
+  color: #346CD9;
+}
+
+.bottom__tab_next {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #346CD9;
+  padding: 10px 16px;
+  border: 1px solid #346CD9;
+  border-radius: 5px;
+  margin-top: -11px;
+}
+
+.bottom__tab_next a {
+  margin-right: 10px;
+}
+
+.bottom__tab_next img {
+  height: 10px;
+  width: 5px;
+}
+
+.contacts__title {
+  margin-top: 27px;
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1C1C1C;
+}
+
+.contacts__box {
+  max-width: 230px;
+  margin-top: 20px;
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #252A34;
+}
+
+.contacts__box img {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.contacts__box a {
+  font-family: "Open Sans light", sans-serif;
+  color: #252A34;
+}
+
+.car-brand_left_input_mr {
+  margin-right: 7px;
+}
+
+.register__form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.register__form_wrapper {
+  margin-left: -10px;
+  width: 100%;
+}
+
+.register__form_wrapper_title {
+  margin: 0 auto;
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: #252A34;
+}
+
+.register__form_wrapper_text {
+  padding-left: 10px;
+  margin-top: 3px;
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #346CD9;
+}
+
+.register__form_wrapper_box input {
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+.register__form_wrapper_box label {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #343434;
+  margin-right: 20px;
+}
+
+.register__form_wrapper_box {
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+.register__form_wrapper_box_100 {
+  width: 100%;
+}
+
+.register__form_wrapper_box_50 {
+  width: 50%;
+}
+
+.register__bottom_button_link {
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  color: #ffffff;
+  padding: 8px 23px 10px;
+  background: #FF2E63;
+  border-radius: 5px;
+}
+
+.register__bottom_button_link_login {
+  padding: 8px 43px 10px;
+  margin-bottom: 156px;
+}
+
+.register__bottom_button_login {
+  margin-bottom: 156px;
+}
+
+.register__bottom_button a {
+  font-family: "Open Sans Regular", sans-serif;
+}
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-radio + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+
+.custom-radio:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.custom-radio:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-radio:focus:not(:checked) + label::before {
+  border-color: #80bdff;
+}
+
+.custom-radio:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.custom-radio:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.radio {
+  margin-bottom: 0.4em;
+}
+
+.register__bottom_button {
+  text-align: center;
+  margin-top: 13px;
+}
+
+.register__botton_text {
+  text-align: center;
+  margin: 25px auto 61px;
+  max-width: 410px;
+}
+
+.register__botton_text_black {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #999999;
+}
+
+.register__botton_text_blue {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #346CD9;
+}

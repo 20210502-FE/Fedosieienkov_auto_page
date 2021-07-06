@@ -1,0 +1,33 @@
+.footer {
+  &__wrapper {
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+
+  &__content {
+    background-color: $color-blue;
+    height: 70px;
+  }
+
+  &__content_left {
+    margin-bottom: -9px;
+  }
+
+  &__content_right_item {
+    margin-left: 30px;
+    margin-top: 9px;
+  }
+
+  &__content_right_item {
+    font-family: $os-font-regular , sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  &__content_right_item a {
+    color: $color-white;
+  }
+
+  &__content_right_item_bold {
+    font-family: $os-font-very-bold , sans-serif;
+  }
+}

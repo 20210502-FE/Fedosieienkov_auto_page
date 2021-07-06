@@ -1,0 +1,168 @@
+.register__form {
+  max-width: 500px;
+  margin: 0 auto;
+
+  &_wrapper {
+    margin-left: -10px;
+    width: 100%;
+
+    &_title {
+      margin: 0 auto;
+      font-family: $r-font-bold , sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: -0.4px;
+      color: $color-text-black-charade;
+    }
+
+    &_text {
+      padding-left: 10px;
+      margin-top: 3px;
+      font-family: $os-font-light , sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.2px;
+      color: $color-blue;
+    }
+
+    &_box input {
+      height: 35px;
+      background: $color-white;
+      border: 1px solid $color-text-dusty-gray;
+      border-radius: 5px;
+    }
+
+    &_box label {
+      font-family: $os-font-light , sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.2px;
+      color: $color-text-black-mine-shaft;
+      margin-right: 20px;
+    }
+
+    &_box {
+      padding-left: 10px;
+      margin-top: 15px;
+
+      &_100 {
+        width: 100%;
+      }
+
+      &_50 {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.register__bottom_button_link {
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  color: $color-white;
+  padding: 8px 23px 10px;
+  background: $color-text-red;
+  border-radius: 5px;
+
+  &_login {
+    padding: 8px 43px 10px;
+    margin-bottom: 156px;
+  }
+}
+
+.register__bottom_button_login {
+  margin-bottom: 156px;
+}
+
+.register__bottom_button a {
+  font-family: $os-font-regular , sans-serif;
+}
+
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+
+.custom-radio:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.custom-radio:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-radio:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+
+.custom-radio:checked+label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.custom-radio:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+.radio {
+  margin-bottom: 0.4em;
+}
+
+.register__bottom_button {
+  text-align: center;
+  margin-top: 13px;
+}
+
+.register__botton_text {
+  text-align: center;
+  margin: 25px auto 61px;
+  max-width: 410px;
+
+  &_black {
+    font-family: $os-font-light , sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: $color-text-dusty-gray;
+  }
+
+  &_blue {
+    font-family: $os-font-light , sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: $color-blue;
+  }
+}

@@ -1,0 +1,234 @@
+.shop {
+  position: relative;
+  &__popular__column_box_text_top {
+    margin-top: 20px;
+    height: 32px;
+  }
+
+  &__sidebar {
+    background: $color-white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 270px;
+  }
+
+  &__input {
+    font-family: $os-font-light , sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-text-dusty-gray;
+  }
+
+  &__input_number {
+    width: 95px;
+    height: 30px;
+    border: 1px solid $color-text-dusty-gray;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-top: 3px;
+  }
+
+  &__input span {
+    margin-top: 21px;
+  }
+
+  &__our-shop {
+    position: absolute;
+    left: 299px;
+    font-family: $r-font-bold ,sans-serif;
+    font-size: 50px;
+    line-height: 64px;
+    color: $color-text-black-mine-shaft;
+  }
+
+  &__column_box_text_bottom_text {
+    margin-left: 20px;
+    font-family: $os-font-light , sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-text-black-mine-shaft;
+    margin-bottom: 22px;
+  }
+
+  &__column_box_text_bottom a {
+    font-family: $os-font-regular , sans-serif;
+    color: $color-white;
+  }
+
+  &__column_box_text_bottom_link {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    background: $color-text-red;
+    border-radius: 5px;
+    padding: 9px 23px;
+    margin-left: 58px;
+    margin-bottom: 20px;
+  }
+}
+
+.sidebar {
+  &__wrapper {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+}
+
+.car-brand {
+  margin-top: 13px;
+
+  &_right {
+    font-family: $os-font-light , sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: $color-text-dusty-gray;
+  }
+  &_left {
+
+    &_brand {
+      margin-left: 8px;
+      font-family: $os-font-light , sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -0.2px;
+      color: $color-text-black-mine-shaft;
+    }
+    &_input {
+      width: 20px;
+      height: 20px;
+      border: 1px solid $color-text-dusty-gray;
+      border-radius: 4px;
+    }
+  }
+}
+
+.price {
+  margin-top: 27px;
+  margin-bottom: 10px;
+  &__title {
+    font-family: $r-font-bold , sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-text-black-charade;
+  }
+}
+
+.brands {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  &__title {
+    font-family: $r-font-regular ,sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: $color-text-black-cod-gray;
+  }
+}
+
+.search {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-family: $r-font-bold , sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: $color-text-black-charade;
+}
+
+.sidebar__input_bottom {
+  width: 230px;
+  height: 30px;
+  border: 1px solid $color-text-dusty-gray;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-top: 3px;
+  margin-bottom: 30px;
+}
+
+.bottom {
+  margin-bottom: 60px;
+
+  &__box {
+    position: relative;
+  }
+
+  &__tab {
+    position: absolute;
+    left: 614px;
+    margin: 0 -10px;
+
+    &_number {
+      padding: 0 10px;
+    }
+
+    &_next {
+      padding: 0 10px;
+    }
+  }
+
+  &__tab_number {
+    font-family: $os-font-light , sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+
+    &_1 {
+      text-decoration-line: underline;
+      color: $color-blue;
+    }
+
+    &_4 {
+      color: $color-blue;
+    }
+  }
+
+  &__tab_next {
+    font-family: $os-font-light , sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-blue;
+    padding: 10px 16px;
+    border: 1px solid $color-blue;
+    border-radius: 5px;
+    margin-top: -11px;
+  }
+
+  &__tab_next a {
+    margin-right: 10px;
+  }
+
+  &__tab_next img {
+    height: 10px;
+    width: 5px;
+  }
+}
+
+.contacts {
+
+  &__title {
+    margin-top: 27px;
+    font-family: $r-font-bold , sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-text-black-cod-gray;
+  }
+
+  &__box {
+    max-width: 230px;
+    margin-top: 20px;
+    font-family: $os-font-regular , sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-text-black-charade;
+  }
+
+  &__box img {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__box a {
+    font-family: $os-font-light , sans-serif;
+    color: $color-text-black-charade;
+  }
+}

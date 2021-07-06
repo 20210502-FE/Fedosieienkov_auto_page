@@ -1,0 +1,64 @@
+.header {
+  font-family: $os-font-regular , sans-serif;
+
+  &__wrapper {
+    padding-top: 19px;
+    padding-bottom: 55px;
+  }
+
+  &__nav-item {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 15px;
+  }
+
+  &__nav-item_bold {
+    font-family: $os-font-very-bold , sans-serif;
+  }
+
+  &__center a {
+    color: $color-text-black-mine-shaft;
+  }
+
+  &__right button {
+    font-family: $os-font-regular , sans-serif;
+  }
+}
+
+
+.button {
+  &__login {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-text-red;
+    border: none;
+  }
+
+  &__register {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-text-red;
+    border: none;
+  }
+
+  &__login_active {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+    padding: 8px 23px 10px;
+    background: $color-text-red;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+
+  &__register_active {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+    padding: 8px 23px 10px;
+    background: $color-text-red;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+}
+

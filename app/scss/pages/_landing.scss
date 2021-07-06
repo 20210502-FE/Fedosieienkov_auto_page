@@ -1,0 +1,118 @@
+.banner {
+  &__content {
+    background-image: url(../../assets/images/banner-car.png);
+    background-size: 882px 494px;
+    height: 494px;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  &__left_text {
+    font-family: $r-font-bold , sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    color: $color-text-black-mine-shaft;
+    max-width: 447px;
+    margin-top: 133px;
+    margin-bottom: 33px;
+  }
+
+  &__left_text_red {
+    color: $color-text-red;
+  }
+
+  &__left_button {
+    font-family: $os-font-regular , sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-white;
+    padding: 11px 28px;
+    background-color: $color-blue;
+    border-radius: 5px;
+  }
+}
+
+
+.danny {
+  margin-bottom: 101px;
+  &__text {
+    width: 50%;
+    background-color: $color-link-water;
+
+    &_title {
+      max-width: 400px;
+      font-family: $os-font-regular , sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      color: $color-text-black-mine-shaft;
+      margin-bottom: 30px;
+    }
+
+    &_text {
+      font-family: $os-font-light , sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: $color-text-black-mine-shaft;
+    }
+  }
+}
+.denny__img {
+  background-image: url(../../assets/images/nissan-370z.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+}
+
+.works {
+  &__content__text_title {
+    margin-bottom: 60px;
+    font-family: $r-font-bold , sans-serif;
+    font-size: 36px;
+    line-height: 46px;
+    color: $color-text-black-mine-shaft;
+  }
+
+  &__column_box {
+    max-width: 250px;
+    position: relative;
+  }
+
+  &__column_box:not(:last-child):before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    height: 20px;
+    width: 32px;
+    background-image: url(../../assets/icons/vector-works-1.png);
+    background-size: cover;
+  }
+
+  &__column_box_img {
+    margin-bottom: 30px;
+  }
+
+  &__column_box_text {
+    text-align: center;
+    font-family: $os-font-light , sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-text-black-mine-shaft;
+  }
+
+  &__column_box_text_title {
+    margin-bottom: 30px;
+    font-family: $os-font-bold , sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-text-black-mine-shaft;
+  }
+
+  &__column_box_text_text {
+    margin-bottom: 131px;
+  }
+}
+

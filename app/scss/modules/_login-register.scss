@@ -1,0 +1,40 @@
+.login-register {
+  margin-bottom: 47px;
+  &__wrapper {
+    margin-left: -30px;
+
+    &_left {
+      border-bottom: 2px solid $color-text-dusty-gray;
+    }
+
+    &_box {
+      font-family: $r-font-bold , sans-serif;
+      font-size: 34px;
+      line-height: 57px;
+      color: $color-text-black-mine-shaft;
+      max-width: 50%;
+      padding-left: 60px;
+      margin-bottom: 11px;
+      position: relative;
+
+      &.active h2:before {
+        content: " ";
+        width: 176px;
+        position: absolute;
+        border-bottom: 5px solid $color-text-red;
+        border-radius: 5px;
+        top: 66.5px;
+      }
+
+      &.active_login h2:before {
+        content: " ";
+        width: 118px;
+        position: absolute;
+        border-bottom: 5px solid $color-text-red;
+        border-radius: 5px;
+        top: 66.5px;
+      }
+    }
+  }
+}
+
