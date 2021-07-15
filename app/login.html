@@ -11,31 +11,23 @@
 <body>
     <header class="header">
         <div class="wrapper header__wrapper flex flex_space-between flex_align-center">
-            <div class="header__left">
-                <div class="header__logo">
-                    <a href="index.html"><img src="assets/icons/logoauto.png" alt="LogoAuto"></a>
-                </div>
+            <div class="header__logo">
+                <a href="index.html"><img src="assets/icons/logoauto.png" alt="LogoAuto"></a>
             </div>
-            <div class="header__center flex">
-                <nav class="header__center_nav">
-                    <ul class="flex">
-                        <li class="header__nav-item"><a href="index.html">Home</a></li>
-                        <li class="header__nav-item"><a href="#">About us</a></li>
-                        <li class="header__nav-item"><a href="shop.html">Shop</a></li>
-                        <li class="header__nav-item"><a href="#">Blog</a></li>
-                        <li class="header__nav-item"><a href="#">Contacts</a></li>
-                        <li class="header__nav-item"><a href="#">How it Works</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__right">
-                <nav class="header__right_nav">
-                    <div class="button">
-                        <a class="button__login" href="login.html">Login</a>
-                        <a class="button__register button__register_active" href="register.html">Register</a>
-                    </div>
-                </nav>
-            </div>
+            <nav class="navigation">
+                <ul class="flex">
+                    <li class="navigation-item"><a href="index.html">Home</a></li>
+                    <li class="navigation-item"><a href="#">About us</a></li>
+                    <li class="navigation-item"><a href="shop.html">Shop</a></li>
+                    <li class="navigation-item"><a href="#">Blog</a></li>
+                    <li class="navigation-item"><a href="#">Contacts</a></li>
+                    <li class="navigation-item"><a href="#">How it Works</a></li>
+                </ul>
+            </nav>
+            <nav class="header__buttons">
+                <a class="button button_transparent" href="login.html">Login</a>
+                <a class="button button_red" href="register.html">Register</a>
+            </nav>
         </div>
     </header>
 
@@ -84,26 +76,22 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <section class="footer__content">
-            <div class="wrapper footer__wrapper flex flex_align-center flex_space-between">
-                <div class="footer__content_left">
-                    <a href="index.html"><img src="assets/icons/footer-logooauto.png" alt="LogooAuto"></a>
-                </div>
-                <div class="footer__content_right">
-                    <nav class="footer__content_right_nav">
-                        <ul class="flex">
-                            <li class="footer__content_right_item"><a href="#">Home</a></li>
-                            <li class="footer__content_right_item"><a href="#">About us</a></li>
-                            <li class="footer__content_right_item"><a href="shop.html">Shop</a></li>
-                            <li class="footer__content_right_item"><a href="#">Blog</a></li>
-                            <li class="footer__content_right_item"><a href="#">Contacts</a></li>
-                            <li class="footer__content_right_item"><a href="#">How it Works</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <footer class="footer footer__content">
+        <div class="wrapper footer__wrapper flex flex_align-center flex_space-between">
+            <div class="footer__content_left">
+                <a href="index.html"><img src="assets/icons/footer-logooauto.png" alt="LogooAuto"></a>
             </div>
-        </section>
+            <nav class="navigation">
+                <ul class="flex">
+                    <li class="navigation-item"><a href="index.html">Home</a></li>
+                    <li class="navigation-item"><a href="#">About us</a></li>
+                    <li class="navigation-item"><a href="shop.html">Shop</a></li>
+                    <li class="navigation-item"><a href="#">Blog</a></li>
+                    <li class="navigation-item"><a href="#">Contacts</a></li>
+                    <li class="navigation-item"><a href="#">How it Works</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

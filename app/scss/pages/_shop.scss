@@ -1,9 +1,5 @@
 .shop {
   position: relative;
-  &__popular__column_box_text_top {
-    margin-top: 20px;
-    height: 32px;
-  }
 
   &__sidebar {
     background: $color-white;
@@ -41,7 +37,7 @@
     color: $color-text-black-mine-shaft;
   }
 
-  &__column_box_text_bottom_text {
+  &__column-text {
     margin-left: 20px;
     font-family: $os-font-light , sans-serif;
     font-size: 14px;
@@ -50,12 +46,12 @@
     margin-bottom: 22px;
   }
 
-  &__column_box_text_bottom a {
+  &__column-desc a {
     font-family: $os-font-regular , sans-serif;
     color: $color-white;
   }
 
-  &__column_box_text_bottom_link {
+  &__column-link {
     text-align: center;
     font-size: 16px;
     line-height: 22px;

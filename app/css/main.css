@@ -138,63 +138,43 @@ li {
   padding-bottom: 55px;
 }
 
-.header__nav-item {
+.button {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.button_transparent {
+  color: #FF2E63;
+  border: none;
+}
+
+.button_red {
+  color: #ffffff;
+  padding: 8px 23px 10px;
+  background-color: #FF2E63;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.navigation-item {
   font-size: 14px;
   line-height: 19px;
   margin: 0 15px;
 }
 
-.header__nav-item_bold {
+.navigation-item_bold {
   font-family: "Open Sans Very Bold", sans-serif;
 }
 
-.header__center a {
+.navigation a {
   color: #343434;
-}
-
-.header__right button {
-  font-family: "Open Sans Regular", sans-serif;
-}
-
-.button__login {
-  font-size: 16px;
-  line-height: 22px;
-  color: #FF2E63;
-  border: none;
-}
-
-.button__register {
-  font-size: 16px;
-  line-height: 22px;
-  color: #FF2E63;
-  border: none;
-}
-
-.button__login_active {
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  padding: 8px 23px 10px;
-  background: #FF2E63;
-  border-radius: 5px;
-  margin-left: 30px;
-}
-
-.button__register_active {
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  padding: 8px 23px 10px;
-  background: #FF2E63;
-  border-radius: 5px;
-  margin-left: 30px;
 }
 
 .popular__content {
   margin-bottom: 101px;
 }
 
-.popular__text_title {
+.popular__title {
   font-family: "Rajdhani Bold", sans-serif;
   font-size: 36px;
   line-height: 46px;
@@ -202,7 +182,7 @@ li {
   margin-bottom: 46px;
 }
 
-.popular__text_link {
+.popular__link {
   font-family: "Open Sans Regular", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -216,81 +196,11 @@ li {
   padding-top: 2px;
 }
 
-.popular__column_box {
-  width: 270px;
-  background: #ffffff;
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-}
-
-.popular__column_box_text_top {
-  font-family: "Rajdhani Bold", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
-  color: #252A34;
-  height: 62px;
-  margin-top: 13px;
-  margin-left: 20px;
-}
-
-.popular__column_box_text_center {
-  font-family: "Rajdhani Bold", sans-serif;
-  font-size: 30px;
-  line-height: 38px;
-  color: #FF2E63;
-  height: 51px;
-  margin-left: 20px;
-}
-
-.popular__column_box_text_center_black {
-  color: #252A34;
-}
-
-.popular__old_price {
-  font-family: "Rajdhani Regular", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
-  text-decoration-line: line-through;
-  color: #999999;
-  margin-left: 7px;
-}
-
-.popular__column_box_text_bottom {
-  width: 270px;
-}
-
-.popular__column_box_text_bottom_text {
-  font-family: "Open Sans light", sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-  color: #343434;
-  height: 35px;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-
-.popular__column_box_text_bottom_link {
-  border: 2px solid #ffffff;
-  padding: 17px 12px;
-  background: #346CD9;
-  border-radius: 10px 0px;
-  border: none;
-}
-
-.popular__column_box_indent {
-  margin-top: 30px;
-  margin-bottom: 83px;
-}
-
-.popular__column_box_indent_85 {
-  margin-top: 85px;
-}
-
 .latest {
   margin-bottom: 100px;
 }
 
-.latest__text_title {
+.latest__title {
   font-family: "Rajdhani Bold", sans-serif;
   font-size: 36px;
   line-height: 46px;
@@ -298,14 +208,14 @@ li {
   margin-bottom: 46px;
 }
 
-.latest__column_box {
+.latest__column-box {
   width: 270px;
   background: #ffffff;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
 
-.latest__column_box_text_top {
+.latest__column-title {
   font-family: "Rajdhani Bold", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -315,13 +225,95 @@ li {
   margin-left: 20px;
 }
 
-.latest__column_box_text_bottom {
+.latest__column-text {
   font-family: "Open Sans light", sans-serif;
   font-size: 14px;
   line-height: 19px;
   color: #343434;
   height: 39px;
   margin-left: 20px;
+}
+
+.car-card {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.car-card__title {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #252A34;
+  height: 62px;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+.car-card__new-price {
+  font-family: "Rajdhani Bold", sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FF2E63;
+  height: 51px;
+  margin-left: 20px;
+}
+
+.car-card__old-price {
+  font-family: "Rajdhani Regular", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration-line: line-through;
+  color: #999999;
+  margin-left: 7px;
+}
+
+.car-card__price {
+  color: #252A34;
+}
+
+.car-card__desc {
+  width: 270px;
+}
+
+.car-card__desc-text {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  height: 35px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.car-card__desc-link {
+  border: 2px solid #ffffff;
+  padding: 17px 12px;
+  background: #346CD9;
+  border-radius: 10px 0px;
+  border: none;
+}
+
+.car-card_indent {
+  margin-top: 30px;
+}
+
+.car-card_indent-top {
+  margin-top: 85px;
+}
+
+.car-card_indent-bottom {
+  margin-bottom: 83px;
+}
+
+.car-card__title_shop {
+  margin-top: 20px;
+  height: 32px;
+}
+
+.footer {
+  font-family: "Open Sans Regular", sans-serif;
 }
 
 .footer__wrapper {
@@ -332,24 +324,10 @@ li {
 .footer__content {
   background-color: #346CD9;
   height: 70px;
+  padding-top: 9px;
 }
 
-.footer__content_left {
-  margin-bottom: -9px;
-}
-
-.footer__content_right_item {
-  margin-left: 30px;
-  margin-top: 9px;
-}
-
-.footer__content_right_item {
-  font-family: "Open Sans Regular", sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.footer__content_right_item a {
+.footer a {
   color: #ffffff;
 }
 
@@ -398,15 +376,15 @@ li {
   top: 66.5px;
 }
 
-.banner__content {
-  background-image: url(../../assets/images/banner-car.png);
+.banner {
+  background-image: url(../assets/images/banner-car.png);
   background-size: 882px 494px;
   height: 494px;
   background-position: right;
   background-repeat: no-repeat;
 }
 
-.banner__left_text {
+.banner__heading_text {
   font-family: "Rajdhani Bold", sans-serif;
   font-size: 50px;
   line-height: 60px;
@@ -416,11 +394,11 @@ li {
   margin-bottom: 33px;
 }
 
-.banner__left_text_red {
+.banner__heading_red {
   color: #FF2E63;
 }
 
-.banner__left_button {
+.banner__heading_button {
   font-family: "Open Sans Regular", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -431,16 +409,16 @@ li {
   border-radius: 5px;
 }
 
-.danny {
+.quotes {
   margin-bottom: 101px;
 }
 
-.danny__text {
+.quotes__desc {
   width: 50%;
   background-color: #e7edfa;
 }
 
-.danny__text_title {
+.quotes__title {
   max-width: 400px;
   font-family: "Open Sans Regular", sans-serif;
   font-size: 20px;
@@ -449,7 +427,7 @@ li {
   margin-bottom: 30px;
 }
 
-.danny__text_text {
+.quotes__text {
   font-family: "Open Sans light", sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -457,28 +435,29 @@ li {
   color: #343434;
 }
 
-.denny__img {
-  background-image: url(../../assets/images/nissan-370z.png);
+.quotes__img {
+  background-image: url(../assets/images/nissan-370z.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
   height: 400px;
 }
 
-.works__content__text_title {
+.works__content__title {
   margin-bottom: 60px;
   font-family: "Rajdhani Bold", sans-serif;
   font-size: 36px;
   line-height: 46px;
   color: #343434;
+  text-align: center;
 }
 
-.works__column_box {
+.works__column-box {
   max-width: 250px;
   position: relative;
 }
 
-.works__column_box:not(:last-child):before {
+.works__column-box:not(:last-child):before {
   content: "";
   position: absolute;
   top: 20px;
@@ -489,11 +468,11 @@ li {
   background-size: cover;
 }
 
-.works__column_box_img {
+.works__column-img {
   margin-bottom: 30px;
 }
 
-.works__column_box_text {
+.works__column-desc {
   text-align: center;
   font-family: "Open Sans light", sans-serif;
   font-size: 16px;
@@ -501,7 +480,7 @@ li {
   color: #343434;
 }
 
-.works__column_box_text_title {
+.works__column-title {
   margin-bottom: 30px;
   font-family: "Open Sans Bold", sans-serif;
   font-size: 16px;
@@ -509,17 +488,12 @@ li {
   color: #343434;
 }
 
-.works__column_box_text_text {
+.works__column-text {
   margin-bottom: 131px;
 }
 
 .shop {
   position: relative;
-}
-
-.shop__popular__column_box_text_top {
-  margin-top: 20px;
-  height: 32px;
 }
 
 .shop__sidebar {
@@ -558,7 +532,7 @@ li {
   color: #343434;
 }
 
-.shop__column_box_text_bottom_text {
+.shop__column-text {
   margin-left: 20px;
   font-family: "Open Sans light", sans-serif;
   font-size: 14px;
@@ -567,12 +541,12 @@ li {
   margin-bottom: 22px;
 }
 
-.shop__column_box_text_bottom a {
+.shop__column-desc a {
   font-family: "Open Sans Regular", sans-serif;
   color: #ffffff;
 }
 
-.shop__column_box_text_bottom_link {
+.shop__column-link {
   text-align: center;
   font-size: 16px;
   line-height: 22px;

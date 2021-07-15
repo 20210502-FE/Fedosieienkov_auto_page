@@ -1,0 +1,15 @@
+.navigation {
+  &-item {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 15px;
+
+    &_bold {
+      font-family: $os-font-very-bold , sans-serif;
+    }
+  }
+
+  & a {
+    color: $color-text-black-mine-shaft;
+  }
+}
