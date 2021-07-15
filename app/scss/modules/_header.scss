@@ -1,0 +1,27 @@
+.header {
+  font-family: $os-font-regular , sans-serif;
+
+  &__wrapper {
+    padding-top: 19px;
+    padding-bottom: 55px;
+  }
+}
+
+.button {
+  font-size: 16px;
+  line-height: 22px;
+
+  &_transparent {
+    color: $color-text-red;
+    border: none;
+  }
+
+  &_red {
+    color: $color-white;
+    padding: 8px 23px 10px;
+    background-color: $color-text-red;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+}
+

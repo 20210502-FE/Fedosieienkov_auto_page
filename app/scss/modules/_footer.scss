@@ -1,0 +1,22 @@
+.footer {
+  font-family: $os-font-regular , sans-serif;
+
+  &__wrapper {
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+
+  &__content {
+    background-color: $color-blue;
+    height: 70px;
+    padding-top: 9px;
+  }
+
+  & a {
+    color: $color-white;
+  }
+
+  &__content_right_item_bold {
+    font-family: $os-font-very-bold , sans-serif;
+  }
+}

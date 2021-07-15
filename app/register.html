@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper flex flex_space-between flex_align-center">
+            <div class="header__logo">
+                <a href="index.html"><img src="assets/icons/logoauto.png" alt="LogoAuto"></a>
+            </div>
+            <nav class="navigation">
+                <ul class="flex">
+                    <li class="navigation-item"><a href="index.html">Home</a></li>
+                    <li class="navigation-item"><a href="#">About us</a></li>
+                    <li class="navigation-item"><a href="shop.html">Shop</a></li>
+                    <li class="navigation-item"><a href="#">Blog</a></li>
+                    <li class="navigation-item"><a href="#">Contacts</a></li>
+                    <li class="navigation-item"><a href="#">How it Works</a></li>
+                </ul>
+            </nav>
+            <nav class="header__buttons">
+                <a class="button button_transparent" href="login.html">Login</a>
+                <a class="button button_red" href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="wrapper login-register">
+           <div class="login-register__wrapper_left">
+               <div class="wrapper login-register__wrapper flex flex_content-center">
+                   <div class="login-register__wrapper_box">
+                       <h2>
+                           Login
+                       </h2>
+                   </div>
+                   <div class="login-register__wrapper_box active">
+                       <h2>
+                           Register
+                       </h2>
+                   </div>
+               </div>
+           </div>
+        </section>
+
+        <section class="register__form flex flex_content-center">
+            <div class="register__form_wrapper flex flex_column">
+                <h3 class="register__form_wrapper_title">Create an Account</h3>
+                <div class="flex">
+                    <div class="register__form_wrapper_box register__form_wrapper_box_50 flex flex_column">
+                        <label for="first name">First Name</label>
+                        <input id="first name" type="text">
+                    </div>
+                    <div class="register__form_wrapper_box register__form_wrapper_box_50 flex flex_column">
+                        <label for="last name">Last Name</label>
+                        <input id="last name" type="text">
+                    </div>
+                </div>
+                <div class="register__form_wrapper_box register__form_wrapper_box_100 flex flex_column">
+                    <label for="e-mail">E-mail</label>
+                    <input id="e-mail" type="email">
+                </div>
+                <div class="register__form_wrapper_box register__form_wrapper_box_100 radio flex">
+                    <input class="custom-radio" type="radio" id="male" name="color" value="indigo">
+                    <label for="male">Male</label>
+                    <input class="custom-radio" type="radio" id="female" name="color" value="indigo">
+                    <label for="female">Female</label>
+                </div>
+                <div class="flex">
+                    <div class="register__form_wrapper_box register__form_wrapper_box_50 flex flex_column">
+                        <label for="password">Password</label>
+                        <input id="password" type="password">
+                    </div>
+                    <div class="register__form_wrapper_box register__form_wrapper_box_50 flex flex_column">
+                        <label for="confirm password">Confirm Password</label>
+                        <input id="confirm password" type="password">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="register__bottom_button">
+                <a class="register__bottom_button_link" href="register.html">Register</a>
+            </div>
+            <div class="register__botton_text">
+                <p class="register__botton_text_black">By clicking the 'Sign Up' button, you confirm that you accept our
+                    <span class="register__botton_text_blue">Terms of Use</span> and <span class="register__botton_text_blue">Privacy Policy</span>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer footer__content">
+        <div class="wrapper footer__wrapper flex flex_align-center flex_space-between">
+            <div class="footer__content_left">
+                <a href="index.html"><img src="assets/icons/footer-logooauto.png" alt="LogooAuto"></a>
+            </div>
+            <nav class="navigation">
+                <ul class="flex">
+                    <li class="navigation-item"><a href="index.html">Home</a></li>
+                    <li class="navigation-item"><a href="#">About us</a></li>
+                    <li class="navigation-item"><a href="shop.html">Shop</a></li>
+                    <li class="navigation-item"><a href="#">Blog</a></li>
+                    <li class="navigation-item"><a href="#">Contacts</a></li>
+                    <li class="navigation-item"><a href="#">How it Works</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
